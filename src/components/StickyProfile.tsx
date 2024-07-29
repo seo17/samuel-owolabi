@@ -6,7 +6,7 @@ function StickyProfile() {
   return (
     <div
       id="sticky-profile"
-      className="bg-white w-[344px] h-[640px] px-6 flex flex-col justify-center items-center rounded-2xl sticky top-10 over"
+      className="bg-white w-[344px] h-[640px] px-6 flex flex-col justify-center items-center rounded-2xl sticky top-10"
     >
       <div className="bg-gradient-to-tr from-orange to-[#9D2200] w-[65%] h-[35%] rounded-2xl">
         <img
