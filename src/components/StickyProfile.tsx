@@ -19,10 +19,18 @@ function StickyProfile() {
         Samuel Owolabi
       </h1>
       <div className="absolute -top-1 -left-[0.15rem] w-[150px] h-[70px]">
-        <img src={designElements.dottedCircle} className="w-full" />
+        <img
+          src={designElements.dottedCircle}
+          alt="dotted half circle"
+          className="w-full"
+        />
       </div>
       <div className="overflow-hidden relative -left-12 *:w-[250px] h-[150px]">
-        <img src={designElements.dottedFire} className="relative -left-32" />
+        <img
+          src={designElements.dottedFire}
+          alt={"dotted half circle with flame icon"}
+          className="relative -left-32"
+        />
       </div>
       <p className="text-dark-gray text-center font-medium text-lg">
         Passionate about transforming ideas into impactful, user-centric
