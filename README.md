@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Samuel E. Owolabi - Portfolio Website
 
-## Getting Started
+Welcome to the first iteration of my portfolio website! This project showcases my work and skills as a sofware engineer. Below, you'll find details about the project, including how to set it up locally and its current features.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [About](#about)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Setup Instructions](#setup-instructions)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This portfolio website is designed to highlight my skills, projects, and experiences.
+The site features a polished and user-friendly interface, demonstrating my proficiency in modern web technologies.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies Used
 
-## Learn More
+- HTML
+- CSS
+- TypeScript
+- Tailwind CSS
+- React
+- NextJS
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Responsive Design**: The site is fully responsive, providing an optimal viewing experience on devices of all sizes.
+- **Project Showcase**: A section dedicated to showcasing my projects with descriptions, technologies used, and links to live demos or repositories.
+- **About Me**: A brief introduction to who I am, my background, and my skills.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Setup Instructions
 
-## Deploy on Vercel
+To run this project locally, follow these steps:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the repository:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   git clone https://github.com/seo17/samuel-owolabi.git
+   cd samuel-owolabi
+   ```
+
+2. **Install dependencies:**
+
+   Ensure you have [Node.js](https://nodejs.org/) installed, then run:
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+
+   ```bash
+   npm start
+   ```
+
+4. **Open your browser:**
+
+   Navigate to `http://localhost:3000` to see the website in action.
+
+## Usage
+
+Explore the different sections of the website to learn more about my work and skills. Feel free to reach out via the contact form if you have any questions or opportunities.
+
+## Contributing
+
+I welcome contributions to improve this portfolio website. If you have any suggestions or find any issues, please feel free to open an issue or submit a pull request.
+
+1. **Fork the repository**
+2. **Create your feature branch:**
+
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+
+3. **Commit your changes:**
+
+   ```bash
+   git commit -m 'Add some feature'
+   ```
+
+4. **Push to the branch:**
+
+   ```bash
+   git push origin feature/YourFeature
+   ```
+
+5. **Open a pull request**
+
+## Contact
+
+Feel free to reach out to me at [samuel.owolabi@example.com](mailto:samuel.owolabi@example.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/samuel-owolabi).
+
+---
+
+Thank you for visiting my portfolio website! Your feedback and support are greatly appreciated.
+
+---
