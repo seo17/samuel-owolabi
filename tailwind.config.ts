@@ -12,12 +12,9 @@ const config: Config = {
         black: {
           DEFAULT: "#151312",
         },
-        darkgrey: {
-          default: "#6A6B6E",
-          50: "#998F8F",
-          100: "#6A6B6E",
-          200: "#B6B4BD",
-        },
+        "grayish-brown": "#998F8F",
+        "dark-gray": "#6A6B6E",
+        "light-gray": "#B6B4BD",
         orange: "#F46C38",
         green: "#C5FF41",
       },
