@@ -99,7 +99,7 @@ function HeroSection() {
       {/* Contact */}
       <section id="experience" className="mt-[200px]">
         <h3 className="text-white text-start font-bold text-[94px] leading-[80px] uppercase">
-          Let's Work <span className="text-light-gray">Together</span>
+          Let Work <span className="text-light-gray">Together</span>
         </h3>
 
         <p className="text-dark-gray font-medium text-lg w-[70%] mt-3">
