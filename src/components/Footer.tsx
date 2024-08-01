@@ -4,11 +4,14 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full pb-10 mb-[50px] md:mb-2 text-light-gray px-7">
+    <footer className="w-full pb-10  text-light-gray px-7">
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light mb-2">
-          Copyright © 2024 Samuel
-        </p>
+        <a
+          href="https://www.framer.com/marketplace/template/sawad/"
+          className="md:text-base text-sm md:font-normal font-light mb-2 underline"
+        >
+          Design Credit
+        </a>
 
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((profile, index) => (

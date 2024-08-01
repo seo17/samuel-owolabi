@@ -83,22 +83,22 @@ export const toolsStack = [
 export const socialMedia = [
   {
     id: 1,
-    icon: <FaGithub />,
+    icon: <FaGithub size={20} />,
     link: "https://github.com/seo17",
   },
   {
     id: 2,
-    icon: <FaLinkedinIn />,
+    icon: <FaLinkedinIn size={20} />,
     link: "https://www.linkedin.com/in/samuel-owolabi-a5243225b",
   },
   {
     id: 3,
-    icon: <FaInstagram />,
+    icon: <FaInstagram size={20} />,
     link: "https://www.instagram.com/s.e.o_17/",
   },
   {
     id: 4,
-    icon: <MdEmail />,
+    icon: <MdEmail size={20} />,
     link: "mailto: ebenmosi17@gmail.com",
   },
 ];
