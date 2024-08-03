@@ -9,7 +9,7 @@ function StickyProfile() {
       className="bg-white w-full lg:w-[344px] lg:h-[640px]  flex flex-col  items-center rounded-2xl lg:sticky top-10 overflow-hidden"
     >
       <div className="w-full lg:w-[344px] lg:h-full flex flex-col items-center justify-center relative px-5 py-8 gap-5">
-        <div className="rotate-12 absolute -top-10 lg:-top-6 left-[185px] lg:-left-10 ">
+        <div className="rotate-12 absolute -top-10 lg:-top-6 left-0 md:left-[185px] lg:-left-10 ">
           <img
             src={designElements.dottedCircle}
             alt="dotted half circle"
@@ -51,7 +51,7 @@ function StickyProfile() {
           </div>
         </div>
 
-        <div className="overflow-hidden absolute -left-32 bottom-40">
+        <div className="overflow-hidden absolute -left-52 bottom-28 md:-left-32 md:bottom-40">
           <img
             src={designElements.dottedFire}
             alt={"dotted half circle with flame icon"}

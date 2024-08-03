@@ -108,7 +108,8 @@ function HeroSection() {
             Let Work <span className="text-light-gray">Together</span>
           </h3>
           <p className="text-center lg:text-start text-dark-gray font-medium text-lg ">
-            You can connect with me on the following platform.
+            You can connect with me on the following platform. Let’s create
+            something together!
           </p>
           <div className="w-full flex flex-row justify-center lg:justify-center items-center space-x-7">
             {socialMedia.map((item) => (
