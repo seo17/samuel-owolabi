@@ -5,7 +5,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="w-full pt-[160px] pb-[80px]  text-light-gray px-7">
-      <div className="flex mt-16 md:flex-row flex-col justify-center items-center">
+      <div className="flex mt-16 flex-col justify-center items-center">
         <p className="md:text-base text-sm md:font-normal font-light mb-2">
           Coded By{" "}
           <a href="https://github.com/seo17" className="underline">

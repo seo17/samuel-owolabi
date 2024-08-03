@@ -27,7 +27,7 @@ function Navbar({ className }: { className?: string }) {
           <LuHome size={20} />
         </HoveredLink>
         <HoveredLink href="#experience">
-          <RiSuitcaseLine size={20} />
+          <RiSuitcaseLine size={22} />
         </HoveredLink>
         <HoveredLink href="#projects">
           <FaRegFolder size={20} />
