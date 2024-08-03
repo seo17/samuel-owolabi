@@ -92,7 +92,7 @@ I welcome contributions to improve this portfolio website. If you have any sugge
 
 ## Contact
 
-Feel free to reach out to me at [samuel.owolabi@example.com](mailto:samuel.owolabi@example.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/samuel-owolabi).
+Connect with me on [LinkedIn](https://www.linkedin.com/in/samuel-owolabi-a5243225b).
 
 ---
 

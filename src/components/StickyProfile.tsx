@@ -51,7 +51,7 @@ function StickyProfile() {
           </div>
         </div>
 
-        <div className="overflow-hidden absolute -left-52 bottom-28 md:-left-32 md:bottom-40">
+        <div className="overflow-hidden absolute -left-52 bottom-28 hidden md:block md:-left-32 md:bottom-40">
           <img
             src={designElements.dottedFire}
             alt={"dotted half circle with flame icon"}
