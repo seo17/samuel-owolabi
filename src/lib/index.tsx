@@ -53,6 +53,12 @@ export const experiences = [
 
 export const projects = [
   {
+    name: "AI Customer Support ChatBot",
+    description: "AI RAG Chatbot Application",
+    image: "/images/customer-support.png",
+    link: "https://customer-support-ai-theta.vercel.app/",
+  },
+  {
     name: "YCA",
     description: "SaaS Application",
     image: "/images/yca.png",

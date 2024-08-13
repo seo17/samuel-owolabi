@@ -63,7 +63,7 @@ function HeroSection() {
       </section>
 
       {/* Projects */}
-      <section id="experience" className="pt-[80px] md:pt-[90px]">
+      <section id="projects" className="pt-[80px] md:pt-[90px]">
         <div>
           <h3 className="text-white text-center lg:text-start font-bold text-[42px] leading-[45px] md:leading-[80px] md:text-[74px] lg:text-[94px] uppercase">
             Featured <br />
@@ -102,7 +102,7 @@ function HeroSection() {
       </section>
 
       {/* Contact */}
-      <section id="experience" className="pt-[80px] md:pt-[90px]">
+      <section id="contact" className="pt-[80px] md:pt-[90px]">
         <div className="flex flex-col items-center lg:items-start gap-4">
           <h3 className="text-white text-center lg:text-start font-bold text-[42px] leading-[45px] md:leading-[80px] md:text-[74px] lg:text-[94px] uppercase">
             Let Work <span className="text-light-gray">Together</span>
