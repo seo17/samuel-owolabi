@@ -11,7 +11,7 @@ export const designElements = {
 
 export const stats = [
   {
-    figure: "+1",
+    figure: "+2",
     name: (
       <p>
         Year of <br /> Experience
@@ -19,7 +19,7 @@ export const stats = [
     ),
   },
   {
-    figure: "+3",
+    figure: "+4",
     name: (
       <p>
         Projects <br /> Completed
@@ -53,7 +53,7 @@ export const experiences = [
 
 export const projects = [
   {
-    name: "AI Customer Support ChatBot",
+    name: "ChatBot",
     description: "AI RAG Chatbot Application",
     image: "/images/customer-support.png",
     link: "https://customer-support-ai-theta.vercel.app/",

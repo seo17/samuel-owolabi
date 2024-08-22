@@ -1,3 +1,5 @@
+"use client";
+
 import {
   designElements,
   stats,
@@ -9,18 +11,20 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
+import { Section } from "./Section";
+
 function HeroSection() {
   return (
     <div id="main" className="w-full lg:w-[50%]">
       {/* Hero Section */}
-      <section id="CTA">
+      <Section id="Hero">
         <div className="flex flex-col items-center lg:items-start  gap-y-10">
           <div className="flex flex-col gap-y-2">
             <h3 className="text-center lg:text-start text-white font-bold text-[52px] leading-[45px] md:text-[94px] md:leading-[80px] uppercase">
-              Software <span className="text-light-gray/35">Engineer</span>
+              Software <span className="text-light-gray/15">Engineer</span>
             </h3>
 
-            <p className="text-center lg:text-start text-dark-gray font-medium text-lg mx-auto lg:mx-0 lg:w-[70%]">
+            <p className="text-base text-center lg:text-start text-dark-gray lg:font-medium md:text-[16px] mx-auto lg:mx-0 lg:w-[70%]">
               Passionate about transforming innovative ideas into impactful,
               user-centric application,crafting scalable and secure web
               solutions.
@@ -30,28 +34,30 @@ function HeroSection() {
           <div className="flex flex-row  justify-evenly md:justify-center lg:justify-start text-light-gray items-center space-x-5 md:gap-x-10 uppercase">
             {stats.map((item) => (
               <div key={item.figure} className="text-start">
-                <p className="font-bold text-5xl md:text-7xl">{item.figure}</p>
+                <p className="font-semibold md:font-bold text-5xl md:text-7xl">
+                  {item.figure}
+                </p>
                 <p className="">{item.name}</p>
               </div>
             ))}
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Experience */}
-      <section id="experience" className="pt-[80px] md:pt-[90px]">
+      <Section id="experience" className="pt-[80px] md:pt-[120px]">
         <div className="flex flex-col gap-2 md:gap-5">
           <h3 className="text-white text-center lg:text-start font-bold text-[52px] leading-[45px] md:text-[94px] md:leading-[80px] uppercase">
-            Over 1 year <span className="text-light-gray">Experience</span>
+            Over 2 year <span className="text-light-gray/15">Experience</span>
           </h3>
 
           <div className="flex flex-col space-y-3">
             {experiences.map((item) => (
               <div
                 key={item.companyName}
-                className="p-6 hover:bg-white/15 rounded-xl text-light-gray"
+                className="text-base p-6 hover:bg-white/15 rounded-xl text-light-gray"
               >
-                <p className="font-bold text-4xl text-white ">
+                <p className="font-bold text-[16px] md:text-4xl text-white ">
                   {item.companyName}
                 </p>
                 <p className="mt-3">{item.summary}</p>
@@ -60,14 +66,14 @@ function HeroSection() {
             ))}
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Projects */}
-      <section id="projects" className="pt-[80px] md:pt-[90px]">
+      <Section id="projects" className="pt-[80px] md:pt-[120px]">
         <div>
           <h3 className="text-white text-center lg:text-start font-bold text-[42px] leading-[45px] md:leading-[80px] md:text-[74px] lg:text-[94px] uppercase">
             Featured <br />
-            <span className="text-light-gray">Projects</span>
+            <span className="text-light-gray/15">Projects</span>
           </h3>
 
           <div className="flex flex-col space-y-3">
@@ -75,6 +81,7 @@ function HeroSection() {
               <Link
                 href={item.link}
                 key={item.name}
+                target="_blank"
                 className="p-6 hover:bg-white/15 rounded-xl text-light-gray"
               >
                 <div className="flex flex-row space-x-3 justify-start items-center">
@@ -85,7 +92,7 @@ function HeroSection() {
                   />
 
                   <div className="w-full">
-                    <p className="text-white font-semibold text-2xl">
+                    <p className="text-white font-semibold text-[16px] md:text-2xl">
                       {item.name}
                     </p>
                     <p className="text-base">{item.description}</p>
@@ -99,16 +106,16 @@ function HeroSection() {
             ))}
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Contact */}
-      <section id="contact" className="pt-[80px] md:pt-[90px]">
+      <Section id="contact" className="pt-[80px] md:pt-[120px]">
         <div className="flex flex-col items-center lg:items-start gap-4">
           <h3 className="text-white text-center lg:text-start font-bold text-[42px] leading-[45px] md:leading-[80px] md:text-[74px] lg:text-[94px] uppercase">
-            Let Work <span className="text-light-gray">Together</span>
+            Let Work <span className="text-light-gray/15">Together</span>
           </h3>
-          <p className="text-center lg:text-start text-dark-gray font-medium text-lg ">
-            You can connect with me on the following platform. Let’s create
+          <p className="text-center lg:text-start text-dark-gray md:font-medium  text-base md:text-[16px] ">
+            You can connect with me on the following platform. Let&#39;s create
             something together!
           </p>
           <div className="w-full flex flex-row justify-center lg:justify-center items-center space-x-7">
@@ -123,7 +130,7 @@ function HeroSection() {
             ))}
           </div>{" "}
         </div>
-      </section>
+      </Section>
     </div>
   );
 }

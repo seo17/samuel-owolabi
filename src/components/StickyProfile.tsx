@@ -1,10 +1,17 @@
+"use client";
 import React from "react";
 import { designElements, socialMedia } from "@/lib";
 import Link from "next/link";
 
+import { motion } from "framer-motion";
+
 function StickyProfile() {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: -10 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.35, ease: "easeIn" }}
+      viewport={{ once: true }}
       id="sticky-profile"
       className="bg-white w-full lg:w-[344px] lg:h-[640px]  flex flex-col  items-center rounded-2xl lg:sticky top-10 overflow-hidden"
     >
@@ -16,7 +23,7 @@ function StickyProfile() {
             className="w-full"
           />
         </div>
-        <div className="bg-gradient-to-tr from-orange to-[#9D2200] w-[200px]  h-[200px] md:w-[240px] md:h-[264px] rounded-2xl">
+        <div className="bg-gradient-to-tr from-orange to-[#9D2200] w-[250px]  h-[200px] md:w-[240px] md:h-[264px] rounded-2xl">
           <img
             src="./images/Samuel Owolabi.png"
             alt="Samuel Owolabi image"
@@ -30,7 +37,7 @@ function StickyProfile() {
           </h1>
 
           <div className="flex flex-col items-center gap-5">
-            <p className="text-dark-gray text-center font-medium text-lg lg:w-full">
+            <p className="text-dark-gray text-center font-medium text-base md:text-[16px] lg:w-full">
               Passionate about transforming ideas into impactful, user-centric
               applications.
             </p>
@@ -42,6 +49,7 @@ function StickyProfile() {
                 <Link
                   href={item.link}
                   key={item.id}
+                  target="_blank"
                   className="hover:scale-125 rounded-xl text-orange"
                 >
                   {item.icon}
@@ -58,7 +66,7 @@ function StickyProfile() {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
