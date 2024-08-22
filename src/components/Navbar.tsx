@@ -7,7 +7,7 @@ import { navItems } from "@/lib";
 export function NavbarDemo() {
   return (
     <div className="relative w-full flex items-center justify-center">
-      <Navbar className="top-[30px]" />
+      <Navbar className="top-[20px]" />
     </div>
   );
 }
