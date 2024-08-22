@@ -3,6 +3,34 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
+import { LuHome } from "react-icons/lu";
+import { RiSuitcaseLine } from "react-icons/ri";
+import { FaRegFolder } from "react-icons/fa6";
+import { FaRegMessage } from "react-icons/fa6";
+
+export const navItems = [
+  {
+    name: "Home",
+    icon: <LuHome size={20} />,
+    link: "/",
+  },
+  {
+    name: "Experience",
+    icon: <RiSuitcaseLine size={20} />,
+    link: "#experience",
+  },
+  {
+    name: "Projects",
+    icon: <FaRegFolder size={20} />,
+    link: "#projects",
+  },
+  {
+    name: "Contact",
+    icon: <FaRegMessage size={20} />,
+    link: "#contact",
+  },
+];
+
 export const designElements = {
   dottedFire: "/svg/dotted_fire.svg",
   dottedCircle: "/svg/dotted_circle.svg",

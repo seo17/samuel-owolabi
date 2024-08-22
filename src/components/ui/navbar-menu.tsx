@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -110,9 +110,41 @@ export const ProductItem = ({
 };
 
 export const HoveredLink = ({ children, ...rest }: any) => {
+  const [isMouseOver, setIsMouseOver] = useState<{
+    state: boolean;
+    index: null | undefined | number;
+  }>({ state: false, index: null });
+
+  const { name, navIndex }: any = { ...rest };
+
+  const handleMouseOver = (index: number) => {
+    setIsMouseOver({ state: true, index });
+  };
+
+  const handleMouseLeave = () => {
+    setIsMouseOver({ state: false, index: null });
+  };
+
   return (
-    <Link {...rest} className="text-white  hover:text-orange ">
-      {children}
-    </Link>
+    <div className="flex flex-col items-center">
+      <Link
+        {...rest}
+        onMouseOver={() => handleMouseOver(navIndex)}
+        onMouseLeave={handleMouseLeave}
+        className="text-white  hover:text-orange z-20"
+      >
+        {children}
+      </Link>
+
+      <div
+        className={`z-10 absolute text-[12px] rounded-lg py-px px-3  bg-[#1C1A19] text-white duration-500 ease-in-out ${
+          isMouseOver.state && isMouseOver.index === navIndex
+            ? "opacity-100 translate-y-10"
+            : "opacity-0 translate-y-0"
+        }`}
+      >
+        {name}
+      </div>
+    </div>
   );
 };

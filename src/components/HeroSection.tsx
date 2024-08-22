@@ -38,7 +38,7 @@ function HeroSection() {
               Software <span className="text-light-gray/15">Engineer</span>
             </h3>
 
-            <p className="text-base text-center lg:text-start text-dark-gray lg:font-medium md:text-[16px] mx-auto lg:mx-0 lg:w-[70%]">
+            <p className="text-base text-center lg:text-start text-dark-gray lg:font-medium md:text-[18px] mx-auto lg:mx-0 lg:w-[70%]">
               Passionate about transforming innovative ideas into impactful,
               user-centric application,crafting scalable and secure web
               solutions.
@@ -71,7 +71,7 @@ function HeroSection() {
                 key={item.companyName}
                 className="text-base p-6 hover:bg-white/15 rounded-xl text-light-gray"
               >
-                <p className="font-bold text-[16px] md:text-4xl text-white ">
+                <p className="font-bold text-[18px] md:text-4xl text-white ">
                   {item.companyName}
                 </p>
                 <p className="mt-3">{item.summary}</p>
@@ -108,7 +108,7 @@ function HeroSection() {
                   />
 
                   <div className="w-full">
-                    <p className="text-white font-semibold text-[16px] md:text-2xl">
+                    <p className="text-white font-semibold text-[18px] md:text-2xl">
                       {item.name}
                     </p>
                     <p className="text-base">{item.description}</p>
@@ -136,7 +136,7 @@ function HeroSection() {
           <h3 className="text-white text-center lg:text-start font-bold text-[42px] leading-[45px] md:leading-[80px] md:text-[74px] lg:text-[94px] uppercase">
             Let Work <span className="text-light-gray/15">Together</span>
           </h3>
-          <p className="text-center lg:text-start text-dark-gray md:font-medium  text-base md:text-[16px] ">
+          <p className="text-center lg:text-start text-dark-gray md:font-medium  text-base md:text-[18px] ">
             You can connect with me on the following platform. Let&#39;s create
             something together!
           </p>

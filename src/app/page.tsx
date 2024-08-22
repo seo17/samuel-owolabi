@@ -8,8 +8,8 @@ export default function Home() {
     <main className="bg-black min-w-full w-full">
       <div className=" w-full h-full">
         <Header />
-        <div className=" w-full flex flex-col justify-center items-center">
-          <div className="flex flex-col lg:flex-row w-full md:w-[85vw] lg:w-full px-5 md:px-[40px] pt-[130px] justify-center gap-x-10 gap-y-10">
+        <div className=" w-full flex flex-col justify-center items-center pt-[130px]">
+          <div className="flex flex-col lg:flex-row w-full md:w-[85vw] px-5 md:px-[40px]  justify-center gap-x-10 gap-y-10">
             <StickyProfile />
 
             <HeroSection />
