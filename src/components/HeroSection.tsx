@@ -9,11 +9,25 @@ import {
 } from "@/lib";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+
+import { motion } from "framer-motion";
 
 import { Section } from "./Section";
 
 function HeroSection() {
+  const [animationClass, setAnimationClass] = useState<{
+    state: boolean;
+    index: null | number;
+  }>({ state: false, index: null });
+  const handleMouseOver = (index: number) => {
+    setAnimationClass({ state: true, index });
+  };
+
+  const handleMouseLeave = (index: number) => {
+    setAnimationClass({ state: false, index: null });
+  };
+
   return (
     <div id="main" className="w-full lg:w-[50%]">
       {/* Hero Section */}
@@ -31,7 +45,7 @@ function HeroSection() {
             </p>
           </div>
 
-          <div className="flex flex-row  justify-evenly md:justify-center lg:justify-start text-light-gray items-center space-x-5 md:gap-x-10 uppercase">
+          <div className="flex flex-row flex-wrap  justify-evenly md:justify-center lg:justify-start text-light-gray items-center gap-3 md:gap-x-10 uppercase">
             {stats.map((item) => (
               <div key={item.figure} className="text-start">
                 <p className="font-semibold md:font-bold text-5xl md:text-7xl">
@@ -48,7 +62,7 @@ function HeroSection() {
       <Section id="experience" className="pt-[80px] md:pt-[120px]">
         <div className="flex flex-col gap-2 md:gap-5">
           <h3 className="text-white text-center lg:text-start font-bold text-[52px] leading-[45px] md:text-[94px] md:leading-[80px] uppercase">
-            Over 2 year <span className="text-light-gray/15">Experience</span>
+            2 year <span className="text-light-gray/15">Experience</span>
           </h3>
 
           <div className="flex flex-col space-y-3">
@@ -77,8 +91,10 @@ function HeroSection() {
           </h3>
 
           <div className="flex flex-col space-y-3">
-            {projects.map((item) => (
+            {projects.map((item, index) => (
               <Link
+                onMouseOver={() => handleMouseOver(index)}
+                onMouseLeave={() => handleMouseLeave(index)}
                 href={item.link}
                 key={item.name}
                 target="_blank"
@@ -87,8 +103,8 @@ function HeroSection() {
                 <div className="flex flex-row space-x-3 justify-start items-center">
                   <img
                     src={item.image}
-                    alt="Project Preview"
-                    className="object-cover w-28 h-28 rounded-lg"
+                    alt="Project Thumbnail Preview"
+                    className="object-cover w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-lg"
                   />
 
                   <div className="w-full">
@@ -98,9 +114,15 @@ function HeroSection() {
                     <p className="text-base">{item.description}</p>
                   </div>
 
-                  <div className="">
-                    <ArrowRight size={32} className="text-orange" />
-                  </div>
+                  <motion.div
+                    className={`-rotate-45 duration-700  ${
+                      animationClass && animationClass.index === index
+                        ? "translate-x-4 -translate-y-4"
+                        : "translate-x-0 -translate-y-0"
+                    }`}
+                  >
+                    <ArrowRight className="text-orange" />
+                  </motion.div>
                 </div>
               </Link>
             ))}

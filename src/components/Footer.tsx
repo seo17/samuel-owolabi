@@ -6,7 +6,11 @@ const Footer = () => {
       <div className="flex mt-16 flex-col justify-center items-center">
         <p className="md:text-base text-sm md:font-normal font-light mb-2">
           Coded By{" "}
-          <a href="https://github.com/seo17" className="underline">
+          <a
+            href="https://github.com/seo17"
+            className="underline"
+            target="_blank"
+          >
             Samuel Owolabi
           </a>
         </p>
@@ -16,6 +20,7 @@ const Footer = () => {
           <a
             href="https://www.framer.com/marketplace/template/sawad/"
             className="underline"
+            target="_blank"
           >
             Mejed Alkoutaini
           </a>
