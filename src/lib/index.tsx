@@ -53,6 +53,12 @@ export const experiences = [
 
 export const projects = [
   {
+    name: "Flashcard App",
+    description: "Flashcard Saas AI",
+    image: "/images/flashcard.png",
+    link: "https://flashcard-saas-ai.vercel.app/",
+  },
+  {
     name: "ChatBot",
     description: "AI RAG Chatbot Application",
     image: "/images/customer-support.png",
