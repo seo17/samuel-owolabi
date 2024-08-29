@@ -66,7 +66,7 @@ export const stats = [
 
 export const experiences = [
   {
-    companyName: "Freelancing",
+    companyName: "Self-Development/Freelancing",
     summary:
       "Developed and deployed secure web app from scratch, both on client and server side with aim of improving user experiences and user engagement.",
     year: "February 2024 - Present",
@@ -96,7 +96,7 @@ export const projects = [
     name: "YCA",
     description: "SaaS Application",
     image: "/images/yca.png",
-    link: "https://youtube-comment-analyser.vercel.app/",
+    link: "https://yca-ecru.vercel.app/",
   },
   {
     name: "Chat App",
