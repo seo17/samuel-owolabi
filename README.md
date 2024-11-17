@@ -65,37 +65,12 @@ To run this project locally, follow these steps:
 
 Explore the different sections of the website to learn more about my work and skills. Feel free to reach out via the contact form if you have any questions or opportunities.
 
-## Contributing
-
-I welcome contributions to improve this portfolio website. If you have any suggestions or find any issues, please feel free to open an issue or submit a pull request.
-
-1. **Fork the repository**
-2. **Create your feature branch:**
-
-   ```bash
-   git checkout -b feature/YourFeature
-   ```
-
-3. **Commit your changes:**
-
-   ```bash
-   git commit -m 'Add some feature'
-   ```
-
-4. **Push to the branch:**
-
-   ```bash
-   git push origin feature/YourFeature
-   ```
-
-5. **Open a pull request**
-
 ## Contact
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/samuel-owolabi-a5243225b).
 
 ---
 
-Thank you for visiting my portfolio website! Your feedback and support are greatly appreciated.
+Thank you for visiting my portfolio website!
 
 ---
