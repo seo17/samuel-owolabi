@@ -139,6 +139,7 @@ export const socialMedia = [
 ];
 
 type ContactInput = {
+  name: string;
   label: string;
   prompt: string;
   type: "text" | "email" | "textbox";
@@ -146,16 +147,19 @@ type ContactInput = {
 
 export const contactFormInputInfo: ContactInput[] = [
   {
+    name: "name",
     label: "Name",
     prompt: "Your Name",
     type: "text",
   },
   {
+    name: "email",
     label: "Email",
     prompt: "Your@email.com",
     type: "email",
   },
   {
+    name: "message",
     label: "Message",
     prompt: "Message",
     type: "textbox",
