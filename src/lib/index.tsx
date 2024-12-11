@@ -66,15 +66,15 @@ export const stats = [
 
 export const experiences = [
   {
-    companyName: "Self-Development/Freelancing",
+    companyName: "Empowered Future",
     summary:
-      "Developed and deployed secure web app from scratch, both on client and server side with aim of improving user experiences and user engagement.",
-    year: "February 2024 - Present",
+      "Collaborating with UI/UX designers to build responsive, functional interfaces and ensure smooth frontend-backend integration. Conducting code reviews, and contributed to new feature development while mastering the existing codebase.",
+    year: "September 2024 - Present",
   },
   {
     companyName: "EL Academy",
     summary:
-      "Developed and implemented comprehensive curriculum to teach full stack development technologies to 50+ students. Implemented customized lesson plans tailored to individual learning styles.Utilized real-world projects to engage students in hands-on learning experiences.",
+      "A results-driven Software Engineering Instructor with a proven track record of enhancing student learning through project-based instruction in technologies like HTML, CSS, JavaScript, PHP, and Python. At EL Academy in Abuja, Nigeria, I increased student retention by 80%, improved technical skills, and supported organizational goals through innovative teaching methods and operational support.",
     year: "January 2023 - February 2024",
   },
 ];
@@ -132,13 +132,32 @@ export const socialMedia = [
     link: "https://www.linkedin.com/in/samuel-owolabi-a5243225b",
   },
   {
-    id: 3,
-    icon: <FaInstagram size={20} />,
-    link: "https://www.instagram.com/s.e.o_17/",
-  },
-  {
     id: 4,
     icon: <MdEmail size={20} />,
     link: "mailto: ebenmosi17@gmail.com",
+  },
+];
+
+type ContactInput = {
+  label: string;
+  prompt: string;
+  type: "text" | "email" | "textbox";
+};
+
+export const contactFormInputInfo: ContactInput[] = [
+  {
+    label: "Name",
+    prompt: "Your Name",
+    type: "text",
+  },
+  {
+    label: "Email",
+    prompt: "Your@email.com",
+    type: "email",
+  },
+  {
+    label: "Message",
+    prompt: "Message",
+    type: "textbox",
   },
 ];
