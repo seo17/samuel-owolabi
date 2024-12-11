@@ -13,8 +13,7 @@ function Contact() {
           Let Work <span className="text-light-gray/15">Together</span>
         </h3>
         <p className="text-center lg:text-start text-dark-gray md:font-medium  text-base md:text-[18px] ">
-          You can connect with me on the following platform. Let&#39;s create
-          something together!
+          Please feel free to send a message
         </p>
         <ContactForm />
       </div>
