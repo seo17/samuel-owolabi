@@ -1,16 +1,26 @@
 "use client";
+import { sendMessageByEmailAction } from "@/actions";
 import { contactFormInputInfo } from "@/lib";
 import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
+import Spinner from "./Spinner";
 
 function ContactForm() {
   const [buttonText, setButtonText] = useState<"Send" | "Thank You">("Send");
+  const [isDisabled, setIsDisabled] = useState<boolean>(false);
+  const [startAnimation, setStartAnimation] = useState<boolean>(false);
   const { register, handleSubmit } = useForm();
 
   const handleMessageSubmit = handleSubmit(async (data) => {
-    setButtonText("Thank You");
-    console.log(data);
-    setButtonText("Send");
+    setStartAnimation(true);
+    const { name, email, message } = data;
+
+    const result = await sendMessageByEmailAction(name, email, message);
+
+    if (result?.status) setButtonText("Thank You");
+
+    setStartAnimation(false);
+    setIsDisabled(true);
   });
 
   const textClassName = "text-[14px] md:text-base";
@@ -54,8 +64,15 @@ function ContactForm() {
 
           <button
             className={`bg-orange hover:bg-orange/90 h-10 rounded-md w-full font-medium text-[#FFF] ${textClassName}`}
+            disabled={isDisabled}
           >
-            {buttonText}
+            {startAnimation ? (
+              <div className="w-full flex justify-center">
+                <Spinner />
+              </div>
+            ) : (
+              buttonText
+            )}
           </button>
         </div>
       </form>
